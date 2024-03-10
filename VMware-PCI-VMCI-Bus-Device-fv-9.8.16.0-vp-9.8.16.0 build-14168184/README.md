@@ -426,7 +426,7 @@ korzystania z ASAN lub narzędzi GFlags to fuzzer nawet jeśli monitoruje zmiany
 
 <h3>LINKI</h3>
 <a href="https://www.youtube.com/watch?v=zI8ftv-y350" target="_blank">[demo YT]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware%20PCI%20VMCI%20Bus%20Device%20fv-9.8.16.0%20vp-9.8.16.0%20build-14168184/VMW.cpp" target="_blank">[poc C++]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware%20PCI%20VMCI%20Bus%20Device%20fv-9.8.16.0%20vp-9.8.16.0%20build-14168184/vmci_%20fv-9.8.16.0_vp-9.8.16.0%20build-14168184%20.js" target="_blank">[WinDbg JavaScript]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware%20PCI%20VMCI%20Bus%20Device%20fv-9.8.16.0%20vp-9.8.16.0%20build-14168184/vmci.sys.i64" target="_blank">[IDA DB]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/tree/main/VMware%20PCI%20VMCI%20Bus%20Device%20fv-9.8.16.0%20vp-9.8.16.0%20build-14168184/IMG" target="_blank">[obrazky]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/VMW.cpp" target="_blank">[poc C++]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci_%20fv-9.8.16.0_vp-9.8.16.0%20build-14168184%20.js" target="_blank">[WinDbg JavaScript]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci.sys.i64" target="_blank">[IDA DB]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/tree/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/IMG" target="_blank">[obrazky]</a><br/>
