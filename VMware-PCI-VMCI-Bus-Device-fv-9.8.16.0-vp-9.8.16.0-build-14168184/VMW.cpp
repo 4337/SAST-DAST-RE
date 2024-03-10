@@ -198,7 +198,7 @@ int main()
         ZeroMemory(uas[i], mem_size);
        
         if ((ret = vmci2.ioctl_0x8103204C(uas[i], 8, mem_size)) == 0) {
-            std::cout << "ioctl 0x8103204C [opcode:2/rellocate] (vmci2) fail! GetLastError() = 0x" << std::hex << GetLastError() << std::dec << std::endl;
+            std::cout << "ioctl 0x8103204C [opcode:8/rellocate] (vmci2) fail! GetLastError() = 0x" << std::hex << GetLastError() << std::dec << std::endl;
             goto __free;
         }
 
