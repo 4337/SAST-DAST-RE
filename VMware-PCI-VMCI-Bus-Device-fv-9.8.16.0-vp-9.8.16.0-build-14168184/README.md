@@ -419,7 +419,7 @@ ponieważ wszystkie inne warunki są spełnione nawet gdy wchodzimy w interakcje
 
 <h3>Wnioski</h3>
 Ta historia dość dobrze pokazuje zależności pomiędzy poszczególnymi fragmentami kodu, to znaczy, aby z powodzeniem wywołać określoną funkcję wejścia/wyjścia musimy 
-najpierw wywołać inne funkcje w określonej kolejności, wszystkie te wywołania muszą mieć odpowiednio ustawione wartości parametrów między innymi dlatego automatyzacja wyszukiwania 
+najpierw wywołać inne funkcje w określonej kolejności, wszystkie te wywołania muszą mieć odpowiednio ustawione wartości parametrów. Między innymi dlatego automatyzacja wyszukiwania 
 podatności jest trudna i zawsze warto przeprowadzić głęboką analizę rozwiązania, które chcemy atakować. Błędy niezainicjalizowanej pamięci same w sobie 
 mogą stwarzać trudności w identyfikacji dla narzędzi automatycznych. Jeśli taka pamięć nie jest wypełniana określonym wzorcem tak jak ma to miejsce w przypadku 
 korzystania z ASAN lub narzędzi GFlags to fuzzer nawet jeśli monitoruje zmiany zwracanych wartości nie będzie w stanie stwierdzić czy zwrócona pamięć jest niezinicjalizowana.
