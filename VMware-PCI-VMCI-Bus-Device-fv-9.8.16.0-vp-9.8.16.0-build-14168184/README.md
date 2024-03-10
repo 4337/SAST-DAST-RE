@@ -320,7 +320,7 @@ Natomiast samą instancje VMCIContext możemy uzyskać za pośrednictwem <a href
 Żeby potwierdzić przypuszczenia dotyczące słabości występujących w obsłudze ioctl 0x8103204C trzeba ustawić wartość różną od zera w  <br/>
 _Irp->CurrentStackLocation->FileObject->FsContext->off_0x10. <br/>
 Utworzyłem w tym celu prosty skrypt 
-<a herf="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci_fv-9.8.16.0_vp-9.8.16.0-build-14168184.js">[JavaScript WinDbg]</a>,
+<a herf="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/vmci_fv-9.8.16.0_vp-9.8.16.0-build-14168184.js">[JavaScript WinDbg]</a>,
 który modyfikuje określoną wartość w pamięci podczas wykonania 
 procedury obsługi IRP_MJ_CREATE. Skrypt ustawia również kilka punktów przerwań, które pozwalają monitorować przebieg wykonania obsługi ioctl 0x8103204C.
 <br/>
@@ -331,7 +331,7 @@ procedury obsługi IRP_MJ_CREATE. Skrypt ustawia również kilka punktów przerw
 Dysponując kontrolą nad rozmiarem alokacji pamięci moglibyśmy wykorzystać opisywany błąd do ujawnienia naprawdę dużych fragmentów pamięci jądra.
 Ja jednak zdecydowałem wykorzystać strukturę VMCIContext. Windowsowa wersja VMCIContext pod przesunięciem 0x88 zawiera wskaźnik do funkcji — niestety nie pamiętam, w którym miejscu jest on inicjalizowany, więc w naszym przypadku jest on równy 0 - poza tym składowe to wielu przypadkach wskaźniki do pamięci dynamicznej jądra. 
 Kolejny aspekt, który skłonił mnie do wykorzystania VMCIContext to kontrolowana przez nas składowa ctx_id (offset 0x10), dzięki niej możemy łatwo zidentyfikować VMCIContext w zwróconej do r-3 pamięci jądra.
-Implementacja znajdującego się w tym repozytorium <a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/VMW.cpp">dowodu koncepcji</a> alokuje 2 struktury VMCIContext, zwalania jedną z alokowanych struktur VMCIContext przez zamknięcie uchwytu do urządzenia.
+Implementacja znajdującego się w tym repozytorium <a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/VMW.cpp">dowodu koncepcji</a> alokuje 2 struktury VMCIContext, zwalania jedną z alokowanych struktur VMCIContext przez zamknięcie uchwytu do urządzenia.
 Następnie alokuje 13 bloków pamięci dynamicznej o rozmiarze 0x90 (rozmiar VMCIContext) za pomocą 0x8103204C i przeszukuje zwróconą pamięć w poszukiwaniu wartości (663133766) VMCIContext->ctx_id zwolnionej instancji. Jeśli wartość zostaje znaleziona to zwraca wartość VMCIContext->off_0x78.
 Pierwotnie miała to być wartość VMCIContext->off_0x88 czyli wskaźnik do funkcji 
 na którego podstawie można wyliczyć adres bazowy vmci.sys w pamięci i wtedy KASLR przestaje stanowić problem, ale jak już wspomniałem off_0x88 jest równe 0 i nie chce mi się szukać 
@@ -426,7 +426,7 @@ korzystania z ASAN lub narzędzi GFlags to fuzzer nawet jeśli monitoruje zmiany
 
 <h3>LINKI</h3>
 <a href="https://www.youtube.com/watch?v=zI8ftv-y350" target="_blank">[demo YT]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/VMW.cpp" target="_blank">[poc C++]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci_fv-9.8.16.0_vp-9.8.16.0-build-14168184.js" target="_blank">[WinDbg JavaScript]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci.sys.i64" target="_blank">[IDA DB]</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/tree/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/IMG" target="_blank">[obrazky]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/VMW.cpp" target="_blank">[poc C++]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/vmci_fv-9.8.16.0_vp-9.8.16.0-build-14168184.js" target="_blank">[WinDbg JavaScript]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/vmci.sys.i64" target="_blank">[IDA DB]</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/tree/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0-build-14168184/IMG" target="_blank">[obrazky]</a><br/>
