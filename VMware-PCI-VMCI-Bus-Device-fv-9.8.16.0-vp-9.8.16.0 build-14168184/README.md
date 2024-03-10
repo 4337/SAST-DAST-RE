@@ -319,7 +319,7 @@ Natomiast samą instancje VMCIContext możemy uzyskać za pośrednictwem <a href
 <br/>
 Żeby potwierdzić przypuszczenia dotyczące słabości występujących w obsłudze ioctl 0x8103204C trzeba ustawić wartość różną od zera w  <br/>
 _Irp->CurrentStackLocation->FileObject->FsContext->off_0x10. <br/>
-Utworzyłem w tym celu prosty skrypt s
+Utworzyłem w tym celu prosty skrypt 
 <a herf="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-PCI-VMCI-Bus-Device-fv-9.8.16.0-vp-9.8.16.0%20build-14168184/vmci_fv-9.8.16.0_vp-9.8.16.0-build-14168184.js">[JavaScript WinDbg]</a>,
 który modyfikuje określoną wartość w pamięci podczas wykonania 
 procedury obsługi IRP_MJ_CREATE. Skrypt ustawia również kilka punktów przerwań, które pozwalają monitorować przebieg wykonania obsługi ioctl 0x8103204C.
