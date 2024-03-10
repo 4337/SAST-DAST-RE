@@ -175,7 +175,7 @@ int main()
     std::cout << "ioctl 0x81032008 allocate VMCIContext with id: 99999 succcess" << std::endl;
 
     /*free VMCIContext (vmci1)*/
-    std::cout << "freeing VMCIContext with id: 99999 (vmci1)" << std::endl;
+    std::cout << "freeing VMCIContext with id: "<< MAGIX_ID << " (vmci1)" << std::endl;
     vmci1.close(); 
 
     /*number of allocations*/
