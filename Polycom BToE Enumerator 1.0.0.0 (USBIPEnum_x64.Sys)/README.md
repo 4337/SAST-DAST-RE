@@ -1,0 +1,1 @@
+Kiedy ubiorę w słowa to będzie :)
