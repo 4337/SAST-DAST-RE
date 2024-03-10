@@ -2,7 +2,7 @@
 <br/>
 //Analizowany dynamicznie: fv-9.8.16.0 vp-9.8.16.0 build-14168184 
 <br/>
-<h3>Historia niezainicjalizowanej pmaięci</h3>
+<h3>Historia niezainicjalizowanej pamięci</h3>
 <br/>
 Pierwotnie koncepcja dla tych repozytoriów była taka, aby umieszczać w nich "suche" informacje o możliwościach 
 wchodzenia w interakcje z różnymi modułami jądra systemu MS Windows wzbogacone o moje jakże błyskotliwe wnioski. 
