@@ -33,7 +33,7 @@ function bp_op_8_alloc_size() {
 
 function  bp_op_8_alloc_ptr() {
 	      let regs = host.currentThread.Registers.User; 
-		  host.diagnostics.debugLog("vmci.sys ioctl: 0x8103204C user size controled allocated address is: "+regs.rax.toString()+"\r\n");
+		  host.diagnostics.debugLog("vmci.sys ioctl: 0x8103204C user size controled allocation address is: "+regs.rax.toString()+"\r\n");
 		  return false;
 }
 
