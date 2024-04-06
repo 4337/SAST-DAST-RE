@@ -1,5 +1,5 @@
 //USBIPEnum_x64.Sys v1.0.0.0 (FDO)<br/>
-//Sterownik FDO nie udostępnia dowiązania symbolicznego, to nie znaczy że nie można uzyskać dostępu do jego interfejsu.<br/>
+//Sterownik FDO nie udostępnia dowiązania symbolicznego, to nie znaczy, że nie można uzyskać dostępu do jego interfejsu.<br/>
 <br/>
 <ul>
 <li><b>ioctl: 0x2A4000</b></li>
