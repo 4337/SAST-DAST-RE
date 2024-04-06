@@ -124,7 +124,7 @@ Pbsluguje prywtane kody IOCTL i URB USB.
 <br/>
 </ul>
 
-<h3>WMI</h3>
+<h3>WMI:</h3>
 
 SetWmiDataItem_proc	PAGE	000000000001FA84	00000068	00000038	00000038	R	.	.	.	.	.	.	.	.<br/>
 SetWmiDataBlock_proc	PAGE	000000000001FAF4	0000005A	00000038	00000030	R	.	.	.	.	.	.	.	.<br/>
