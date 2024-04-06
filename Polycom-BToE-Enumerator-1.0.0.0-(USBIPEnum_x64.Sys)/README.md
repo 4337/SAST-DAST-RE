@@ -119,7 +119,7 @@ Mn. obsługuje URB.
 <u>Additional requirments: (DeviceObject->DeviceExtension->off_0x8 != 0) && (DeviceObject->DeviceExtension->off_0xc != 6) && (FileObject->FsContext != nullptr) &&
                        (FileObject->FsContext->off_0x50 != 0)</u><br/>
 <br/>
-Pbsluguje prywtane kody IOCTL i URB USB.
+Obsługuje prywtane kody IOCTL i URB USB.
 <br/>
 <br/>
 </ul>
