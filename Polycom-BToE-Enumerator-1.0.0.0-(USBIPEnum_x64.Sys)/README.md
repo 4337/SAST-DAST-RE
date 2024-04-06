@@ -122,14 +122,14 @@ Mn. obsługuje URB.
 Pbsluguje prywtane kody IOCTL i URB USB.
 <br/>
 <br/>
+</ul>
+
 <h3>WMI</h3>
 
 SetWmiDataItem_proc	PAGE	000000000001FA84	00000068	00000038	00000038	R	.	.	.	.	.	.	.	.<br/>
 SetWmiDataBlock_proc	PAGE	000000000001FAF4	0000005A	00000038	00000030	R	.	.	.	.	.	.	.	.<br/>
 QueryWmiDataBlock_proc	PAGE	000000000001FB54	0000005C	00000038	00000040	R	.	.	.	.	.	.	.	.<br/>
 QueryWmiRegInfo_proc	PAGE	000000000001FBB8	0000003D	00000028	00000030	R	.	.	.	.	.	.	.	.<br/>
-
-</ul>
 
 <h3>LINKI:</h3>
 
