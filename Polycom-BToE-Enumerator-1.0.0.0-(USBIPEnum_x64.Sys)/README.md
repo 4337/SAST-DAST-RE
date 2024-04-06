@@ -102,7 +102,7 @@ N/A
 <u>Access: N/A</u><br/>
 <u>Method: N/A</u><br/>
 <u>Rozmiar bufforów: OUT >= 0x30, IN = N/A</u><br/>
-<u>Additional requirments (DeviceObject->DeviceExtension->off_0x8 != 0) && (DeviceObject->DeviceExtension->off_0xc != 6) && (FileObject->FsContext != nullptr) &&
+<u>Additional requirments: (DeviceObject->DeviceExtension->off_0x8 != 0) && (DeviceObject->DeviceExtension->off_0xc != 6) && (FileObject->FsContext != nullptr) &&
                        (FileObject->FsContext->off_0x50 != 0)</u><br/>
 <br/>
 //(IOCTL_2A4000_Runtine) przypisuje do FileObject->FsContext (SECURE)DeviceObject->DeviceExtensions<br/>
@@ -116,7 +116,7 @@ Mn. obsługuje URB.
 <u>Access: N/A</u><br/>
 <u>Method: N/A</u><br/>
 <u>Rozmiar bufforów: OUT == N/A, IN = N/A</u><br/>
-<u>Additional requirments (DeviceObject->DeviceExtension->off_0x8 != 0) && (DeviceObject->DeviceExtension->off_0xc != 6) && (FileObject->FsContext != nullptr) &&
+<u>Additional requirments: (DeviceObject->DeviceExtension->off_0x8 != 0) && (DeviceObject->DeviceExtension->off_0xc != 6) && (FileObject->FsContext != nullptr) &&
                        (FileObject->FsContext->off_0x50 != 0)</u><br/>
 <br/>
 Pbsluguje prywtane kody IOCTL i URB USB.
