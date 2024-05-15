@@ -16,12 +16,10 @@
 <pre>
 BYTE eas[0x30] = { 0 };
 FILE_FULL_EA_INFORMATION* eap =  reinterpret_cast<FILE_FULL_EA_INFORMATION*>(&eas[0]);
-
 eap->NextEntryOffset = 0;
 eap->Flags = 0;
     eap->EaNameLength = 7;
     eap->EaValueLength = 0x20;
-
     union {
 #pragma pack(2)
         struct EAVALUES {
