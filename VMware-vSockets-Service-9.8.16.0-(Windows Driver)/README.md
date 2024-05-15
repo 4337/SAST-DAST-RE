@@ -16,11 +16,13 @@
 <pre>
 BYTE eas[0x30] = { 0 };
 FILE_FULL_EA_INFORMATION* eap =  reinterpret_cast<FILE_FULL_EA_INFORMATION*>(&eas[0]);
+
 eap->NextEntryOffset = 0;
 eap->Flags = 0;
-    eap->EaNameLength = 7;
-    eap->EaValueLength = 0x20;
-    union {
+eap->EaNameLength = 7;
+eap->EaValueLength = 0x20;
+
+union {
 #pragma pack(2)
         struct EAVALUES {
             short family_;
@@ -29,13 +31,13 @@ eap->Flags = 0;
         }*Ea_values;
 #pragma pack(pop)
         BYTE* Raw_values;
-    };                       
+};                       
 
-    Raw_values = eas + 16;
+Raw_values = eas + 16;
 
-    Ea_values->family_   = 0x1c;
-    Ea_values->type_     = 1; 
-    Ea_values->protocol_ = 0;
+Ea_values->family_   = 0x1c;
+Ea_values->type_     = 1; 
+Ea_values->protocol_ = 0;
 </pre>
 <br/>
 
