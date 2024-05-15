@@ -1,8 +1,7 @@
 //vsock.sys 9.8.16.0<br/>
 //vsocklib_x64.dll 9.8.16.0<br/>
-<br/>
-symlink: \\DosDevices\\vmci<br/>
-         \\Device\\vmci<br/>
+//symlink: \\DosDevices\\vmci<br/>
+//         \\Device\\vmci<br/>
 
 <br/>
 <img src="./IMG/EAInit_dll.png" style="float:right;"/>
@@ -442,10 +441,16 @@ Linki
 </h3>
 <ul>
 <li><b>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/Polycom-BToE-Enumerator-1.0.0.0-(USBIPEnum_x64.Sys)/USBIPEnum_x64_interface.cpp" target="_blank">(Polycom) USBIPEnum Interface - Teraz możecie sobie atakować URB, czy co tam chcecie :)</a>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-vSockets-Service-9.8.16.0-(Windows%20Driver)/vSock_interface.cpp" target="_blank">vSock.sys interface</a>
 </b></li>
 <li><b>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/Polycom-BToE-Enumerator-1.0.0.0-(USBIPEnum_x64.Sys)/USBIPEnum_x64.Sys.i64" target="_blank">IDA db</a>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-vSockets-Service-9.8.16.0-(Windows%20Driver)/vsock.sys.i64" target="_blank">IDA db (vSock.sys)</a>
+</b></li>
+<li><b>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-vSockets-Service-9.8.16.0-(Windows%20Driver)/vsocklib_x64.dll.i64" target="_blank">IDA db (vsocklib_x64.dll)</a>
+</b></li>
+<li><b>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/VMware-vSockets-Service-9.8.16.0-(Windows%20Driver)/Funct_Tables.txt" target="_blank">Tablica funkcji</a>
 </b></li>
 </ul>
 
