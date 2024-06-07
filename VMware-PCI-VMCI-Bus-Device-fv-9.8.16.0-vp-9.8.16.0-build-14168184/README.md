@@ -409,7 +409,7 @@ Jeżeli wartość Irp->CurrentStackLocation->Parameters->Create->DesiredAccess j
 RtlCompareUnicodeString("\\VMX", Irp->CurrentStackLocation->FileObject->off_0x58, TRUE) == 0, czyli porównuje czy Irp->CurrentStackLocation->FileObject->FileName jest równy "\VMX".
 <s>Nie mam zielonego pojęcia kiedy ten warunek może być spełniony w systemie Windows, być może jest to związane z "internalsami" samego VMWare Workstation, być może z zagnieżdżoną wirtualizacją lub hiper-vizorem, być może jest to "zaślepka", lub korzystają z tego developerzy, albo inne sterowniki, a być może wyjaśnienie jest prostsze niż się wydaje tylko jeszcze muszę parę lat pogrzebać w jądrze Windows.</s>
 <br/>
-😁 Trochę już mam <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/controlling-device-namespace-access">click</a> 😁
+😁 Trochę już mam ... pojęcia <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/controlling-device-namespace-access">click</a> 😁
 <br/>
 W każdym razie gdyby jakimś cudem udało się sprawić, aby to porównanie było prawdziwe to kolejnym krokiem jest weryfikacja uprawnień i dopiero kiedy ta weryfikacja 
 zakończy się sukcesem to w _Irp->CurrentStackLocation->FileObject->FsContext->off_0x10 zostanie ustawiona wartość 1.
