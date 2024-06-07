@@ -423,7 +423,7 @@ najpierw wywołać inne funkcje w określonej kolejności, wszystkie te wywołan
 podatności jest trudna i zawsze warto przeprowadzić głęboką analizę rozwiązania, które chcemy atakować. Błędy niezainicjalizowanej pamięci same w sobie 
 mogą stwarzać trudności w identyfikacji dla narzędzi automatycznych. Jeśli taka pamięć nie jest wypełniana określonym wzorcem tak jak ma to miejsce w przypadku 
 korzystania z ASAN/MSAN lub narzędzi GFlags (ogólnie podsystemu debugowania Windows, ale nie tylko, bo o ile dobrze kojarzę to przynajmniej jeszcze do niedawna
-firefox i wersja jmalloc wykorzystywała bit patterns nawet w przypadku gdy firefox nie był debugowany) to fuzzer nawet jeśli monitoruje zmiany zwracanych wartości nie będzie w stanie stwierdzić czy zwrócona pamięć jest niezinicjalizowana.
+firefox i wersja jmalloc wykorzystywała "bit patterns" nawet w przypadku gdy firefox nie był debugowany) to fuzzer nawet jeśli monitoruje zmiany zwracanych wartości nie będzie w stanie stwierdzić czy zwrócona pamięć jest niezinicjalizowana.
 
 <h3>LINKI</h3>
 <a href="https://www.youtube.com/watch?v=zI8ftv-y350" target="_blank">[demo YT]</a><br/>
