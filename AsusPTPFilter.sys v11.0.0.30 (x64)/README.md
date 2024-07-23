@@ -70,7 +70,7 @@ ffffa60c`f91a0fc8  00000000`00000000 00000001`404c1e50
 Access violation - code c0000005 (!!! second chance !!!)
 00000000`0000000d ??              ???
 2: kd> kb
-   RetAddr               : Args to Child                                                           : Call Site<br/>
+ # RetAddr               : Args to Child                                                           : Call Site
 00 fffff802`434d1efb     : 00000000`00000000 00000000`00000000 00000000`00000000 fffff802`434ccf20 : 0xd
 01 fffff802`434ccf87     : 00000000`00000000 00000000`0000060c 00000000`00000000 00000000`00000000 : AsusPTPFilter+0x11efb
 02 fffff802`1fa49b05     : ffffe301`42536f49 ffffe301`fd808300 ffffa781`c8245891 00000000`00000000 : AsusPTPFilter+0xcf87
