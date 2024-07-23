@@ -274,3 +274,4 @@ Chcę mi się spać 😴<br/>
 
 08.06.2024 - Zgłoszenie do Asus PSIRT <br/>
 23.07.2024 - Fixed in AsusPTPFilter.sys v16.0.0.27 <br/>
+23.07.2024 - Publikacja<br/>
