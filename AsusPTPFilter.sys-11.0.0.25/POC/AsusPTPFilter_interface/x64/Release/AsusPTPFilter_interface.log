@@ -1,9 +1,0 @@
-﻿  AsusPTPFilter_interface.cpp
-Z:\work\Bugs\14.05.2024 - Asus\POC\AsusPTPFilter_interface\AsusPTPFilter_interface.cpp(36,25): warning C4838: konwersja z „int” do „BYTE” wymaga konwersji zawężającej
-Z:\work\Bugs\14.05.2024 - Asus\POC\AsusPTPFilter_interface\AsusPTPFilter_interface.cpp(36,31): warning C4305: "inicjowanie": obcięcie z "int" do "BYTE"
-Z:\work\Bugs\14.05.2024 - Asus\POC\AsusPTPFilter_interface\AsusPTPFilter_interface.cpp(36,25): warning C4309: "inicjowanie": obcięcie stałej wartości
-  Trwa generowanie kodu
-  Previous IPDB not found, fall back to full compilation.
-  All 391 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Zakończono generowanie kodu
-  AsusPTPFilter_interface.vcxproj -> Z:\work\Bugs\14.05.2024 - Asus\POC\AsusPTPFilter_interface\x64\Release\AsusPTPFilter_interface.exe
