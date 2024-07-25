@@ -273,5 +273,5 @@ Chcę mi się spać 😴<br/>
 <h3>Oś czasu:</h3>
 
 08.06.2024 - Zgłoszenie do Asus PSIRT <br/>
-23.07.2024 - Fixed in AsusPTPFilter.sys v16.0.0.27 <br/>
+23.07.2024 - Fixed in AsusPTPFilter.sys v16.0.0.27 (latest) <br/>
 23.07.2024 - Publikacja<br/>
