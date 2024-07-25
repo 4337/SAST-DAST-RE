@@ -265,8 +265,8 @@ Chcę mi się spać 😴<br/>
 <h3>Linki:</h3>
 
 <a href="https://www.youtube.com/watch?v=ruJWjGiNm7I">Demo</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/AsusPTPFilter.sys-v11.0.0.30-(x64)/POC/AsusPTPFilter_interface/AsusPTPFilter_interface.cpp">POC</a><br/>
-<a href="https://github.com/4337/SAST-DAST-RE/blob/main/AsusPTPFilter.sys-v11.0.0.30-(x64)/AsusPTPFilter.sys.i64">IDA db</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/AsusPTPFilter.sys-v11.0.0.30-x64/POC/AsusPTPFilter_interface/AsusPTPFilter_interface.cpp">POC</a><br/>
+<a href="https://github.com/4337/SAST-DAST-RE/blob/main/AsusPTPFilter.sys-v11.0.0.30-x64/AsusPTPFilter.sys.i64">IDA db</a><br/>
 
 <hr/>
 
