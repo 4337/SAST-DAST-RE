@@ -21,7 +21,7 @@ Ta procedura tworzy obiekt urządzenia "FDO" (_DEVICE_OBJECT), dołącza go do s
 <br/>
 Oczywiście występują tu różnice w wielkościach struktury DeviceExtension między obiektami "PDO" i "FDO".<br/>
 Kiedy sterownik otrzymuje żądanie IRP_MJ_READ z aplikacji trybu użytkownika to sterowanie w końcu trafia do funkcji sub_140011EBC. Ta funkcja przy pomocy CFG 
-próbuje wywołać procedurę ("PDO") DeviceObject->DeviceExtension->off_0x98, o ile umiem liczyć do 0x98,<br/> 
+próbuje wywołać procedurę ("PDO") DeviceObject->DeviceExtension->off_0x98. O ile umiem liczyć do 0x98,<br/> 
 to odwołując się do pamięci, której rozmiar alokacji jest równy 0x98 pod przesunięciem 0x98 dla 8-bajtowego typu danych odwołujemy się do pamięci poza zakresem przekroczonym o 8 bajtów.
 <br/>
 <br/>
