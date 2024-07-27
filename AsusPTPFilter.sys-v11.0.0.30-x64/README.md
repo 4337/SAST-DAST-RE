@@ -32,8 +32,8 @@ Nie zależnie jednak od tego czy potraktujemy tę podatność jako "Out-of-bound
 w tym sensie, że nie możemy jej wykorzystać do eskalacji uprawnień, chyba że będziemy w stanie ominąć mechanizm "Null Page Guard" - jest to możliwe by default w systemach 32-bitowych z zainstalowanym podsystemem NTVDM - lub będziemy w stanie uzyskać kontrolę nad wartością pamięci spod adresu (PDO) DeviceObject->DeviceExtension->off_0x98.<br/>
 W przeciwnym wypadku możemy wyłączenie w efektowny sposób wysadzić system operacyjny w kosmos. <br/>
 Z formalnego punktu widzenia błąd nawet w przypadku zwykłego "BSOD-a" jest podatnością, ponieważ oddziałuje na dostępność systemu z poziomu nisko uprzywilejowanego konta użykownika, w tym sensie że np. na serwerach często nie posiadamy uprawnienia "SeShutdownPrivilege".<br/>
-W przypadku laptopów gamingowych to raczej nie jest problem, chyba, że ktoś właśnie bierze udział w turnieju, dostał BSOD-em i przegrał 1000000 dolarów w CS-a :), natomiast nie wiem, w jakich innych produkatach ASUS-a wykorzystywany jest jeszcze ten sterownik, ani jak wygląda sprawa w przypadku innych systemów operacyjnych niż MS Windows. czywiście są jeszcze kwestie systemów Windows "pre-8",
-w których błąd jest exploitowalny w domyślnej konfiguracji.
+W przypadku laptopów gamingowych to raczej nie jest problem, chyba, że ktoś właśnie bierze udział w turnieju, dostał BSOD-em i przegrał 1000000 dolarów w CS-a :), natomiast nie wiem, w jakich innych produkatach ASUS-a wykorzystywany jest jeszcze ten sterownik, ani jak wygląda sprawa w przypadku innych systemów operacyjnych niż MS Windows. <br/>
+Oczywiście są jeszcze kwestie systemów Windows "pre-8", w których błąd jest exploitowalny w domyślnej konfiguracji.
 <h3>CRASH log:</h3>
 <pre>
 7: kd> !devobj @rcx
