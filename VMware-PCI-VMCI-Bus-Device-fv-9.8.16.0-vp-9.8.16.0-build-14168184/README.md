@@ -282,7 +282,7 @@ Funkcja IOCTLIRP_SystemBuffer_8_eq_8_sub_1400044C0 zaczyna od weryfikacji czy wi
 Jeśli tak to kończy działanie, jeśli nie to wywołuje ExAllocatePoolWithTag(PoolType=0x200 /*NonPagedPoolNx*/, NumberOfBytes=_IRP->AssociatedIrp->SystemBuffer[0xc],0x4D4D5443).
 To, co jest dość istotne w tym miejscu to fakt, że pamięć po alokacji nie jest inicjalizowana.
 <br/>
-Następnie funkcja w pętli wyszukuje obiekt VMCIContext->off_0x18 na liście obiektów VMCIContext->off_0x20, jeśli obiekt nie zostanie znaleziony na liście to do zaalkowanej przez nas pamięci dymenicznej są kopiowane elementy z listy VMCIContext->off_0x20. To kopiowanie jest poprzedzone weryfikacją warunku który sprawdza czy 
+Następnie funkcja w pętli wyszukuje obiekt VMCIContext->off_0x18 na liście obiektów VMCIContext->off_0x20, jeśli obiekt nie zostanie znaleziony na liście to do zaalokowanej przez nas pamięci dynamicznej są kopiowane elementy z listy VMCIContext->off_0x20. To kopiowanie jest poprzedzone weryfikacją warunku, który sprawdza czy 
 VMCIContext->off_0x20->off_0x10 + 8 <= IO->SystemBuffer[0xc] - tak więc funkcja sama zakłada, że bufor może być większy. 
 Z naszego punktu widzenia jednak niczego to nie zmienia, ponieważ zarówno w przypadku kiedy bufor byłby mniejszy jak również wtedy kiedy szukany obiekt znajduje się na liście 
 zaalokowana przez nas pamięć zostaje zwrócona przez wskaźnik do funkcji nadrzędnej.
