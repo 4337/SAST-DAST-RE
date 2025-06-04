@@ -299,12 +299,11 @@ Funkcja weryfikuje za pomocą ProbeForWrite czy pamięć wielkości alokacji, kt
 ma odpowiednie prawa dostępu i jest odpowiednio wyrównana.
 <br/>
 Jeśli tak jest to koiuje pamięć jądra pod wskazany przez użytkownika adres r3.<br/>
-Jeśli czytałeś uważnie to mamy tu conajmniej 2 - prawdopodobnie 3 - błędy bezpieczeństwa:
+Jeśli czytałeś uważnie to mamy tu conajmniej 2 błędy bezpieczeństwa:
 <br/>
 <br/>
 1. Alokacja pamięci dynamicznej o rozmiarze bezpośrednio kontrolowanym przez użytkownika - potencjalny Local Denial of Service.<br/>
 2. Zwrócenie do użytkownika pamięci o rozmiarze kontrolowanym przez r-3 która może być niezinicjalizowana - Ujawnienie pamięci jądra.<br/> 
-3. Zapis/kopiowanie danych pod wskazany przez użytkownika adres pamięci w r-3.<br/>
 <br/>
 <br/>
 Super, ale jak już wam wspomniałem większość ioctl tak jak w tym wypadku wymaga spełnienia pewnych warunków. W przypadku 0x8103204C wartość
