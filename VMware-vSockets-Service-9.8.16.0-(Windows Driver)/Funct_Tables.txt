@@ -1,0 +1,69 @@
+lea     rdx, [rbx+0D8h]
+mov     [rdx], table_A || table_B
+
+
+.data:0000000140010010 functions_table_B_off_140010010 dq offset sub_140006800
+.data:0000000140010010                                         ; DATA XREF: sub_1400074D0+4B↑o
+.data:0000000140010018                 dq offset sub_140006810
+.data:0000000140010020                 dq offset sub_140006820
+.data:0000000140010028                 dq offset sub_140006860
+.data:0000000140010030                 dq offset sub_140006970
+.data:0000000140010038                 dq offset sub_140006A00
+.data:0000000140010040                 dq offset sub_140006A20
+.data:0000000140010048                 dq offset sub_140006A90
+.data:0000000140010050                 dq offset sub_140006AB0
+.data:0000000140010058                 dq offset sub_140006AC0
+.data:0000000140010060                 dq offset _guard_check_icall_nop
+.data:0000000140010068                 dq offset sub_140006AD0
+.data:0000000140010070                 dq offset sub_140006AE0
+.data:0000000140010078                 dq offset sub_140006AF0
+.data:0000000140010080                 dq offset sub_140006B00
+.data:0000000140010088                 dq offset sub_140006B10
+.data:0000000140010090                 dq offset DllUnload
+.data:0000000140010098                 dq offset sub_140006BE0
+.data:00000001400100A0                 dq offset DllUnload
+.data:00000001400100A8                 dq offset DllUnload
+.data:00000001400100B0 dword_1400100B0 dd 0FFFFFFFFh           ; DATA XREF: sub_140007920:loc_140007A9D↑r
+.data:00000001400100B0                                         ; sub_14000976C+A↑r ...
+.data:00000001400100B4                 align 20h
+.data:00000001400100C0 functions_table_A_off_1400100C0 dq offset sub_1400075C0
+.data:00000001400100C0                                         ; DATA XREF: sub_14000ABD0+4E↑o
+.data:00000001400100C8                 dq offset sub_1400077C0
+.data:00000001400100D0                 dq offset sub_1400077E0
+.data:00000001400100D8                 dq offset sub_140007920
+.data:00000001400100E0                 dq offset sub_140007C20
+.data:00000001400100E8                 dq offset sub_140007CE0
+.data:00000001400100F0                 dq offset sub_140007CF0
+.data:00000001400100F8                 dq offset sub_140007DE0
+.data:0000000140010100                 dq offset sub_140007E10
+.data:0000000140010108                 dq offset ioctl_0x81032080_internal_handler_sub_140007E40
+.data:0000000140010110                 dq offset _guard_check_icall_nop
+.data:0000000140010118                 dq offset ioctl_0x81032088_internal_handle_sub_140007EC0
+.data:0000000140010120                 dq offset sub_1400082D0
+.data:0000000140010128                 dq offset sub_1400082E0
+.data:0000000140010130                 dq offset sub_140008650
+.data:0000000140010138                 dq offset sub_140008660
+.data:0000000140010140                 dq offset sub_1400087E0
+.data:0000000140010148                 dq offset sub_140008820
+.data:0000000140010150                 dq offset sub_1400088A0
+.data:0000000140010158                 dq offset sub_140008900
+.data:0000000140010160 off_140010160   dq offset sub_14000ADE0 ; DATA XREF: sub_14000A518:loc_14000A539↑o
+.data:0000000140010168                 dq offset sub_14000ADE0
+.data:0000000140010170                 dq offset sub_14000AE40
+.data:0000000140010178                 dq offset sub_14000AE70
+.data:0000000140010180                 dq offset sub_14000B160
+.data:0000000140010188                 dq offset sub_14000AEA0
+.data:0000000140010190                 dq offset sub_14000AEE0
+.data:0000000140010198                 dq offset sub_14000AF80
+.data:00000001400101A0                 dq offset sub_14000AFC0
+.data:00000001400101A8                 dq offset sub_14000B000
+.data:00000001400101B0                 dq offset sub_14000B010
+.data:00000001400101B8                 dq offset sub_14000B060
+.data:00000001400101C0                 dq offset sub_14000B0A0
+.data:00000001400101C8                 dq offset sub_14000B290
+.data:00000001400101D0                 dq offset sub_14000B290
+.data:00000001400101D8                 dq offset _guard_check_icall_nop
+.data:00000001400101E0                 dq offset _guard_check_icall_nop
+.data:00000001400101E8                 align 10h
+.data:00000001400101F0 off_1400101F0   dq offset sub_14000B6C0 ; DATA XREF: sub_14000A518:loc_14000A551↑o
+.data:00000001400101F8                 dq offset sub_14000B6C0
