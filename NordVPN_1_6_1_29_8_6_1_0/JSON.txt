@@ -1,1 +1,391 @@
 {"MessageType":"command","Headers":["type:UnquarantineFile","method:Start"],"Body":"{\"Id\":\"66600000-0000-0000-0000-000000000000\",\"RestoreFolderPath\":\"C:\"}","Arguments":["cmd.exe"],"Id":"00000000-0000-0000-0000-000000000000"}
+
+{"MessageType":"call","Headers":["type:ISettingsGrpc","method:StopService"],"Body":"","Arguments":["\"Wecsvc\""],"Id":"00000000-0000-0000-0000-000000000000"} 
+
+{"MessageType":"call","Headers":["type:ISettingsGrpc","method:ChangeServiceStartType"],"Body":"{\"a\":\"b\"}","Arguments":["\"EventLog\""],"Id":"00000000-0000-0000-0000-000000000000"} 
+
+{
+  "Value": {
+    "TypesAll": [
+      {
+        "SetName": "call",
+        "TypesSupported": [
+          { "TypeName": "IActionGrpc" },
+          { "TypeName": "IRestartGrpc" },
+          { "TypeName": "ISplitTunnelingGrpc" },
+          { "TypeName": "ISelfHealingGrpc" },
+          { "TypeName": "INetworkAdapterTypeInformationGrpc" },
+          { "TypeName": "IServiceVersionInformationGrpc" },
+          { "TypeName": "IServiceCrashSimulatorGrpc" },
+          { "TypeName": "IServiceChannelStatusGrpc" },
+          { "TypeName": "IProcessDiagnosticsRetrieverGrpc" },
+          { "TypeName": "ISettingsGrpc" },
+          { "TypeName": "ILibraryPreloaderGrpc" },
+          { "TypeName": "IMeshnetManagerTunnelGrpc" },
+          { "TypeName": "IThreatProtectionGrpc" },
+          { "TypeName": "IVpnConnectionManagerGrpcV2" }
+        ]
+      },
+      {
+        "SetName": "command",
+        "TypesSupported": [
+          { "TypeName": "SetDataConsent" },
+          { "TypeName": "ExecuteNetworkFlushAndReset" },
+          { "TypeName": "SetBackupServersIds" },
+          { "TypeName": "SaveUnprocessedEvents" },
+          { "TypeName": "SetConnectionRecommendationCorrelationId" },
+          { "TypeName": "GenerateDeviceKeys" },
+          { "TypeName": "ClearUnprocessedEvents" },
+          { "TypeName": "ChangeSettingsValues" },
+          { "TypeName": "StopPipes" },
+          { "TypeName": "SaveDeviceUuid" },
+          { "TypeName": "SetLastPickedServerId" },
+          { "TypeName": "SaveEvent" },
+          { "TypeName": "StartListener" },
+          { "TypeName": "DeleteDeviceUuid" },
+          { "TypeName": "StopListener" }
+        ]
+      },
+      {
+        "SetName": "event",
+        "TypesSupported": [
+          { "TypeName": "CertificateTrusted" },
+          { "TypeName": "StateChanged" },
+          { "TypeName": "VpnConnectionTimeoutOccurred" },
+          { "TypeName": "RetryConnectionSequenceChanged" },
+          { "TypeName": "AccessTokenInStorageUpdated" },
+          { "TypeName": "NetworkInterfaceChanged" },
+          { "TypeName": "ConnectionFlowProgressed" },
+          { "TypeName": "StateValuesSync" },
+          { "TypeName": "SettingChanged" },
+          { "TypeName": "SettingsChanged" },
+          { "TypeName": "AuditCalculationsRequest" },
+          { "TypeName": "IpInfo" }
+        ]
+      },
+      {
+        "SetName": "query",
+        "TypesSupported": [
+          { "TypeName": "NewConnectionContextRequest" },
+          { "TypeName": "IpInfoRequest" },
+          { "TypeName": "ConnectionContextRequest" },
+          { "TypeName": "ConnectionFlowContextRequest" },
+          { "TypeName": "InitialProtocolRequest" },
+          { "TypeName": "ConnectionFlowContextDumpRequest" }
+        ]
+      },
+      {
+        "SetName": "post",
+        "TypesSupported": [
+          { "TypeName": "ValueTuple<MarkedValue<GetDeviceUuid>, MarkedValue<Guid>>" },
+          { "TypeName": "ValueTuple<MarkedValue<SessionGuidGenerated>, MarkedValue<Guid>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetDataConsent>, MarkedValue<DataConsentResponse>>" },
+          { "TypeName": "ValueTuple<MarkedValue<IsRestartNeeded>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<VpnStateHeartbeatsQuery>, MarkedValue<VpnStateHeartbeatDto[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<UnprocessedEventsRequest>, MarkedValue<UnprocessedEventsResponse>>" },
+          { "TypeName": "ValueTuple<MarkedValue<TpServiceStart>, MarkedValue<ServiceState>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetDeviceKey>, MarkedValue<String>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetDailySummary>, MarkedValue<TpLiteStatisticsDailySummary[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetRetryServersIds>, MarkedValue<RetryServersIds>>" },
+          { "TypeName": "ValueTuple<MarkedValue<IsListenerRunning>, MarkedValue<TpLiteBlockedDnsRequestListenerStatus>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetServiceLogs>, MarkedValue<String>>" },
+          { "TypeName": "ValueTuple<MarkedValue<IsReady>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<SessionGuidCurrent>, MarkedValue<Guid>>" },
+          { "TypeName": "ValueTuple<MarkedValue<TpServiceStop>, MarkedValue<ServiceState>>" },
+          { "TypeName": "ValueTuple<MarkedValue<EventsRequest>, MarkedValue<EventsResponse>>" }
+        ]
+      }
+    ]
+  },
+  "ErrorInfo": null
+}
+
+
+{
+  "Value": {
+    "TypesAll": [
+      {
+        "SetName": "call",
+        "TypesSupported": []
+      },
+      {
+        "SetName": "command",
+        "TypesSupported": [
+          { "TypeName": "UnquarantineFile" },
+          { "TypeName": "WebProtectionStart" },
+          { "TypeName": "SetMultipleCategoriesReferrerFilter" },
+          { "TypeName": "WebProtectionStop" },
+          { "TypeName": "WebProtectionSetFeatureConfig" },
+          { "TypeName": "DeleteFileFromHistory" },
+          { "TypeName": "SetDeepScanStatus" },
+          { "TypeName": "Start" },
+          { "TypeName": "StopFeatures" },
+          { "TypeName": "SetCategoryEnabled" },
+          { "TypeName": "MonitorDiagnostics" },
+          { "TypeName": "WebProtectionClearHistory" },
+          { "TypeName": "DeleteQuarantinedFile" },
+          { "TypeName": "ServiceStop" },
+          { "TypeName": "ClearCategoriesStats" },
+          { "TypeName": "SetLanguage" },
+          { "TypeName": "ClearStatsByCategories" },
+          { "TypeName": "SetAllCategoriesReferrerUrlFilter" },
+          { "TypeName": "StopPipes" },
+          { "TypeName": "UpdateToken" },
+          { "TypeName": "ClearHistory" },
+          { "TypeName": "Stop" },
+          { "TypeName": "SetMultipleCategoriesReferrerUrlFilter" }
+        ]
+      },
+      {
+        "SetName": "event",
+        "TypesSupported": [
+          { "TypeName": "TokenUpdated" },
+          { "TypeName": "StateChanged" },
+          { "TypeName": "StateValuesSync" },
+          { "TypeName": "UpdateWebProtectionStatistics" }
+        ]
+      },
+      {
+        "SetName": "query",
+        "TypesSupported": []
+      },
+      {
+        "SetName": "post",
+        "TypesSupported": [
+          { "TypeName": "ValueTuple<MarkedValue<GetReferrerInfo>, MarkedValue<ReferrerInfo[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetDailySummary>, MarkedValue<FileProtectionDailySummary[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetWebProtectionCategories>, MarkedValue<WebCategory[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetFileProtectionStatistics>, MarkedValue<FileProtectionStatistics>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetReferrersLimited>, MarkedValue<Referrer[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetVulnerableApps>, MarkedValue<VulnerableApp[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<WebStatsHaveChanged>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<IsVulnerabilityDetectionStarted>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetCurrentState>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetAccessToken>>" },
+          { "TypeName": "ValueTuple<MarkedValue<ThreatProtectionServiceLogsRequest>, MarkedValue<String>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetLibraryVersion>, MarkedValue<String>>" },
+          { "TypeName": "ValueTuple<MarkedValue<StartVulnerabilityDetection>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<StopVulnerabilityDetection>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<String>, MarkedValue<GetAccessToken>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetThreatProtectionVersion>, MarkedValue<Version>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetWebProtectionState>, MarkedValue<Boolean>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetDailySummary>, MarkedValue<WebProtectionDailySummary[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetReferrers>, MarkedValue<Referrer[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetNowScanning>, MarkedValue<FileInScanInfo[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetHistory>, MarkedValue<FileActivityDetails[]>>" },
+          { "TypeName": "ValueTuple<MarkedValue<GetLibmanglerVersion>, MarkedValue<String>>" }
+        ]
+      }
+    ]
+  },
+  "ErrorInfo": null
+}
+
+
+{
+  "TypesAll": [
+    {
+      "SetName": "call",
+      "TypesSupported": [
+        { "TypeName": "IActionGrpc" },
+        { "TypeName": "IRestartGrpc" },
+        { "TypeName": "ISplitTunnelingGrpc" },
+        { "TypeName": "ISelfHealingGrpc" },
+        { "TypeName": "INetworkAdapterTypeInformationGrpc" },
+        { "TypeName": "IServiceVersionInformationGrpc" },
+        { "TypeName": "IServiceCrashSimulatorGrpc" },
+
+        { "TypeName": "IServiceChannelStatusGrpc" },
+        { "TypeName": "IProcessDiagnosticsRetrieverGrpc" },
+        { "TypeName": "ISettingsGrpc" },
+        { "TypeName": "ILibraryPreloaderGrpc" },
+        { "TypeName": "IMeshnetManagerTunnelGrpc" },
+        { "TypeName": "IThreatProtectionGrpc" },
+        { "TypeName": "IVpnConnectionManagerGrpcV2" }
+      ]
+    },
+    {
+      "SetName": "command",
+      "TypesSupported": [
+        { "TypeName": "GenerateDeviceKeys" },
+        { "TypeName": "SetBackupServersIds" },
+        { "TypeName": "StopPipes" },
+        { "TypeName": "DeleteDeviceUuid" },
+        { "TypeName": "ExecuteNetworkFlushAndReset" },
+        { "TypeName": "SaveDeviceUuid" },
+        { "TypeName": "StopListener" },
+        { "TypeName": "StartListener" },
+        { "TypeName": "SaveEvent" },
+        { "TypeName": "SetDataConsent" },
+        { "TypeName": "ChangeSettingsValues" },
+        { "TypeName": "SaveUnprocessedEvents" },
+        { "TypeName": "SetLastPickedServerId" },
+        { "TypeName": "SetConnectionRecommendationCorrelationId" },
+        { "TypeName": "ClearUnprocessedEvents" }
+      ]
+    },
+    {
+      "SetName": "event",
+      "TypesSupported": [
+        { "TypeName": "ConnectionFlowProgressed" },
+        { "TypeName": "StateValuesSync" },
+        { "TypeName": "SettingChanged" },
+        { "TypeName": "IpInfo" },
+        { "TypeName": "SettingsChanged" },
+        { "TypeName": "NetworkInterfaceChanged" },
+        { "TypeName": "VpnConnectionTimeoutOccurred" },
+        { "TypeName": "AccessTokenInStorageUpdated" },
+        { "TypeName": "RetryConnectionSequenceChanged" },
+        { "TypeName": "CertificateTrusted" },
+        { "TypeName": "StateChanged" }
+      ]
+    },
+    {
+      "SetName": "query",
+      "TypesSupported": [
+        { "TypeName": "ConnectionFlowContextRequest" },
+        { "TypeName": "NewConnectionContextRequest" },
+        { "TypeName": "IpInfoRequest" },
+        { "TypeName": "ConnectionFlowContextDumpRequest" }
+      ]
+    },
+    {
+      "SetName": "post",
+      "TypesSupported": [
+        { "TypeName": "ValueTuple<MarkedValue<SessionReset>, MarkedValue<SessionValues>>" },
+        { "TypeName": "ValueTuple<MarkedValue<UnprocessedEventsRequest>, MarkedValue<UnprocessedEventsResponse>>" },
+        { "TypeName": "ValueTuple<MarkedValue<TpServiceStart>, MarkedValue<ServiceState>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDataConsent>, MarkedValue<DataConsentResponse>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetRetryServersIds>, MarkedValue<RetryServersIds>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDeviceKey>, MarkedValue<String>>" },
+        { "TypeName": "ValueTuple<MarkedValue<TpServiceStop>, MarkedValue<ServiceState>>" },
+        { "TypeName": "ValueTuple<MarkedValue<InitialProtocolRequest>, MarkedValue<InitialProtocolResponse>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetServiceLogs>, MarkedValue<String>>" },
+        { "TypeName": "ValueTuple<MarkedValue<VpnStateHeartbeatsQuery>, MarkedValue<VpnStateHeartbeatDto[]>>" },
+        { "TypeName": "ValueTuple<MarkedValue<SessionGetValues>, MarkedValue<SessionValues>>" },
+        { "TypeName": "ValueTuple<MarkedValue<IsReady>, MarkedValue<Boolean>>" },
+        { "TypeName": "ValueTuple<MarkedValue<SessionGuidGenerated>, MarkedValue<Guid>>" },
+        { "TypeName": "ValueTuple<MarkedValue<SessionGuidCurrent>, MarkedValue<Guid>>" },
+        { "TypeName": "ValueTuple<MarkedValue<IsListenerRunning>, MarkedValue<TpLiteBlockedDnsRequestListenerStatus>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDailySummary>, MarkedValue<TpLiteStatisticsDailySummary[]>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDeviceUuid>, MarkedValue<Guid>>" },
+        { "TypeName": "ValueTuple<MarkedValue<IsRestartNeeded>, MarkedValue<Boolean>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ConnectionContextRequest>, MarkedValue<ConnectionContextResponse>>" },
+        { "TypeName": "ValueTuple<MarkedValue<EventsRequest>, MarkedValue<EventsResponse>>" }
+      ]
+    }
+  ]
+}
+
+
+{
+  "TypesAll": [
+    {
+      "SetName": "call",
+      "TypesSupported": [
+        { "TypeName": "IMeshnetEventsCallbackGrpc" },
+        { "TypeName": "IAppLogGetterGrpc" },
+        { "TypeName": "IVpnServiceCallbackGrpcV2" }
+      ]
+    },
+    {
+      "SetName": "command",
+      "TypesSupported": [
+        { "TypeName": "ShowDeepScanNotification" },
+        { "TypeName": "ThreatProtectionTurnOnDeepScan" },
+        { "TypeName": "InitializeConsent" },
+        { "TypeName": "VpnReconnect" },
+        { "TypeName": "StopPipes" },
+        { "TypeName": "ChangeCyberSecState" },
+        { "TypeName": "ThreatProtectionShowQuarantinedMalwareUserChoicePopup" },
+        { "TypeName": "ChangeConnectionProtocol" },
+        { "TypeName": "ChangeProtocolToUdp" }
+      ]
+    },
+    {
+      "SetName": "event",
+      "TypesSupported": [
+        { "TypeName": "TokenInvalidated" },
+        { "TypeName": "PeriodicVpnStateHeartbeatEvent" },
+        { "TypeName": "CyberSecStateChangeRequested" },
+        { "TypeName": "FileHistoryUpdated" },
+        { "TypeName": "VpnConfigCreated" },
+        { "TypeName": "StateChanged" },
+        { "TypeName": "FileScanInfo" },
+        { "TypeName": "ConsentChanged" },
+        { "TypeName": "UserJourneyInteractionGenerated" },
+        { "TypeName": "VpnConnectionStatePushed" },
+        { "TypeName": "StateValuesSync" },
+        { "TypeName": "CertificateTrusted" },
+        { "TypeName": "NetworkInterfaceChanged" },
+        { "TypeName": "UpdateWebProtectionHistory" },
+        { "TypeName": "NordlynxAdapterCriticalError" },
+        { "TypeName": "SecurityContextChanged" }
+      ]
+    },
+    {
+      "SetName": "query",
+      "TypesSupported": [
+        { "TypeName": "GetAppLogs" },
+        { "TypeName": "GetConnectionProtocol" },
+        { "TypeName": "GetVpnCurrentConnectionState" },
+        { "TypeName": "GetCurrentVpnProtocol" },
+        { "TypeName": "GetCurrentToken" },
+        { "TypeName": "HttpRequestQuery" },
+        { "TypeName": "IsWebProtectionEnabled" },
+        { "TypeName": "GetVpnConnectionState" },
+        { "TypeName": "GetActiveConnectionProtocol" },
+        { "TypeName": "GetVpnConnectionProtocol" },
+        { "TypeName": "ConnectionIsVpnProtocolActive" }
+      ]
+    },
+    {
+      "SetName": "post",
+      "TypesSupported": [
+        { "TypeName": "ValueTuple<MarkedValue<Guid>, MarkedValue<SessionGuidGenerated>>" },
+        { "TypeName": "ValueTuple<MarkedValue<IsAnyThreatProtectionFeatureEnabled>, MarkedValue<Boolean>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetLibmanglerVersion>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Boolean>, MarkedValue<GetCurrentState>>" },
+        { "TypeName": "ValueTuple<MarkedValue<EventsResponse>, MarkedValue<EventsRequest>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<SessionReset>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDomain>, MarkedValue<String>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetAccessToken>, MarkedValue<String>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetCurrentState>>" },
+        { "TypeName": "ValueTuple<MarkedValue<VulnerableApp[]>, MarkedValue<GetVulnerableApps>>" },
+        { "TypeName": "ValueTuple<MarkedValue<TrustPilot>, MarkedValue<String>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<StartVulnerabilityDetection>>" },
+        { "TypeName": "ValueTuple<MarkedValue<FileProtectionDailySummary[]>, MarkedValue<GetDailySummary>>" },
+        { "TypeName": "ValueTuple<MarkedValue<FileScanInfo>, MarkedValue<DeleteFileConfirmationResponse>>" },
+        { "TypeName": "ValueTuple<MarkedValue<String>, MarkedValue<GetLibmanglerVersion>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Guid>, MarkedValue<SessionGuidCurrent>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetDailySummary>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetCyberSecState>, MarkedValue<Boolean>>" },
+        { "TypeName": "ValueTuple<MarkedValue<WebProtectionDailySummary[]>, MarkedValue<GetDailySummary>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Boolean>, MarkedValue<IsVulnerabilityDetectionStarted>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Version>, MarkedValue<GetThreatProtectionVersion>>" },
+        { "TypeName": "ValueTuple<MarkedValue<UnprocessedEventsResponse>, MarkedValue<UnprocessedEventsRequest>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetSecurityContext>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<SessionGuidGenerated>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<UnprocessedEventsRequest>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Guid>, MarkedValue<GetDeviceUuid>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<IsVulnerabilityDetectionStarted>>" },
+        { "TypeName": "ValueTuple<MarkedValue<TpLiteBlockedDnsRequestListenerStatus>, MarkedValue<IsListenerRunning>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetThreatProtectionVersion>>" },
+        { "TypeName": "ValueTuple<MarkedValue<VpnStateHeartbeatDto[]>, MarkedValue<VpnStateHeartbeatsQuery>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetDomains>, MarkedValue<String[]>>" },
+        { "TypeName": "ValueTuple<MarkedValue<Boolean>, MarkedValue<GetWebProtectionState>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<IsListenerRunning>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<ThreatProtectionServiceLogsRequest>>" },
+        { "TypeName": "ValueTuple<MarkedValue<SessionValues>, MarkedValue<SessionGetValues>>" },
+        { "TypeName": "ValueTuple<MarkedValue<GetCyberSecSomeFeaturesOff>, MarkedValue<Boolean>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<GetVulnerableApps>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<VpnStateHeartbeatsQuery>>" },
+        { "TypeName": "ValueTuple<MarkedValue<ErrorInfo>, MarkedValue<SessionGuidCurrent>>" }
+      ]
+    }
+  ]
+}
+
+…
+
+
