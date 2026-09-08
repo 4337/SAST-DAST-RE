@@ -1,9 +1,5 @@
 {"MessageType":"command","Headers":["type:UnquarantineFile","method:Start"],"Body":"{\"Id\":\"66600000-0000-0000-0000-000000000000\",\"RestoreFolderPath\":\"C:\"}","Arguments":["cmd.exe"],"Id":"00000000-0000-0000-0000-000000000000"}
 
-{"MessageType":"call","Headers":["type:ISettingsGrpc","method:StopService"],"Body":"","Arguments":["\"Wecsvc\""],"Id":"00000000-0000-0000-0000-000000000000"} 
-
-{"MessageType":"call","Headers":["type:ISettingsGrpc","method:ChangeServiceStartType"],"Body":"{\"a\":\"b\"}","Arguments":["\"EventLog\""],"Id":"00000000-0000-0000-0000-000000000000"} 
-
 {
   "Value": {
     "TypesAll": [
