@@ -182,8 +182,8 @@ Więc mój klucz publiczny był po prostu ignorowany.<br/>
 ---
 Wymiana klucza
 ---
-Rozwiązanie tego problemu okazało się dość proste: terminacja procesu NordVPN.exe, jeśli jest uruchomiony, uruchomienie procesu NordVPN.exe<br/>
-w trybie SUSPENDED, tak aby nie zdążył wymienić się kluczami kryptograficznymi z usługami systemowymi, i przesłanie własnego klucza.<br/>
+Rozwiązanie tego problemu okazało się dość proste: terminacja procesu NordVPN.exe, jeśli jest uruchomiony, uruchomienie procesu NordVPN.exe,<br/>
+code lub dll injection i przesłanie własnego klucza.<br/>
 
 <h3>.JSON IPC</h3>
 
