@@ -8,7 +8,7 @@
 #include "Helpers.h"
 #include "Nord.h"
 
-DWORD Nord::start_suspended() {
+DWORD Nord::start() {
 
     STARTUPINFOA startup_info;
     PROCESS_INFORMATION process_info;

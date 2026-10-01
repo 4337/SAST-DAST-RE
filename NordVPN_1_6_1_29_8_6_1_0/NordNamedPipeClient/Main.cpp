@@ -36,7 +36,7 @@ int main(int argc, char** argv)
 
         }
 
-        if (Nord_app.start_suspended() == -1) {
+        if (Nord_app.start() == -1) {
             printf("[!]. Process creation failed\r\n");
             return -1;
         }

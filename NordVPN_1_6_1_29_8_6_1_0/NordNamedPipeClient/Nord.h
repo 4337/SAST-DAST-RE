@@ -67,9 +67,9 @@ public:
 	BOOL stop(DWORD) const;
 
 	/*
-	* Create NordVPN process suspended 
+	* Create NordVPN process
 	*/
-	DWORD start_suspended();
+	DWORD start();
 
 	DWORD get_pid() const noexcept {
 		return pid;
